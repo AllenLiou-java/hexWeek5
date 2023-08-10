@@ -1,0 +1,33 @@
+.dashboard {
+    margin-left: 296px;
+    max-width: calc(100% - 296px);
+
+    span {
+        font-size: 1.5rem;
+        line-height: 24px;
+        display: inline-block;
+        vertical-align: bottom;
+        cursor: pointer;
+    }
+
+    .hearder {
+        padding: 32px;
+
+        .left .button {
+            transition: .3s;
+            cursor: pointer;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+
+            span {
+                color: $success;
+            }
+        }
+
+        .right span:hover {
+            color: $success;
+        }
+    }
+}

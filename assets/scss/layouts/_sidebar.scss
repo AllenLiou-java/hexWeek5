@@ -1,0 +1,82 @@
+.sidebar {
+    position: relative;
+    background-color: $secondary;
+    width: 296px;
+    padding: 32px;
+    min-height: 100vh;
+    position: fixed;
+
+    .logo {
+        margin-bottom: 32px;
+
+        a {
+            display: block;
+            width: 150px;
+            background-image: url('/assets/images/logo-ANSWER.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            text-indent: 101%;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+    }
+
+    .item {
+        .itemList {
+            position: relative;
+
+
+
+            span {
+                font-size: 1.25rem;
+                line-height: 1;
+            }
+
+            h2 {
+                display: inline-block;
+                font-size: 1rem;
+                font-weight: 700;
+                margin: 0;
+            }
+        }
+
+        .itemList.active {
+
+            span,
+            h2>a {
+                color: $success;
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: -32px;
+                transform: translateY(-50%);
+                width: 4px;
+                height: 32px;
+                background-color: $success;
+            }
+        }
+    }
+
+    .info {
+        position: absolute;
+        bottom: 32px;
+
+        img {
+            @include square(40px);
+            object-fit: cover;
+        }
+
+        .name {
+            line-height: 19px;
+        }
+
+        .email {
+            font-size: 14px;
+            line-height: 17px;
+            color: $gray-600;
+        }
+    }
+}

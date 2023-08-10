@@ -1,0 +1,193 @@
+<div class="admin">
+    <div class="hearder d-flex justify-content-between align-items-end">
+        <div class="left d-flex align-items-end">
+            <h3 class="my-0 me-5 fs-4 fw-bold">Admin</h3>
+            <div class="button m-0 fw-bolder">
+                <span class="mdi mdi-plus me-1"></span>
+                Add New Admin
+            </div>
+        </div>
+        <div class="right">
+            <span class="mdi mdi-magnify me-4"></span>
+            <span class="mdi mdi-bell-ring"></span>
+        </div>
+    </div>
+
+    <div class="body pt-3 px-4 table-responsive">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th scope="col">ID<span class="mdi mdi-arrow-down"></span></th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Verified</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">#1</th>
+                    <td>Emir Wicks</td>
+                    <td>emir.wicks@mail.com</td>
+                    <td>Yes</td>
+                    <td>
+                        <span class="mdi mdi-eye me-4"  data-bs-toggle="modal" data-bs-target="#userInfoCard"></span>
+                        <span class="mdi mdi-pencil"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">#2</th>
+                    <td>Zaina Goldsmith</td>
+                    <td>zaina.goldsmith@mail.com</td>
+                    <td>Yes</td>
+                    <td>
+                        <span class="mdi mdi-eye me-4"></span>
+                        <span class="mdi mdi-pencil"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">#3</th>
+                    <td>Mahima Lopez</td>
+                    <td>mahima.lopez@mail.com</td>
+                    <td>Yes</td>
+                    <td>
+                        <span class="mdi mdi-eye me-4"></span>
+                        <span class="mdi mdi-pencil"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">#4</th>
+                    <td>Pharrell Murray</td>
+                    <td>pharrell.murray@mail.com</td>
+                    <td>Yes</td>
+                    <td>
+                        <span class="mdi mdi-eye me-4"></span>
+                        <span class="mdi mdi-pencil"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">#5</th>
+                    <td>Annika Mcbride</td>
+                    <td>annika.mcbride@mail.com</td>
+                    <td>Yes</td>
+                    <td>
+                        <span class="mdi mdi-eye me-4"></span>
+                        <span class="mdi mdi-pencil"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">#6</th>
+                    <td>Fatimah Clark</td>
+                    <td>fatimah.clark@mail.com</td>
+                    <td>Yes</td>
+                    <td>
+                        <span class="mdi mdi-eye me-4"></span>
+                        <span class="mdi mdi-pencil"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">#7</th>
+                    <td>Klaudia Rhodes</td>
+                    <td>klaudia.rhodes@mail.com</td>
+                    <td>Yes</td>
+                    <td>
+                        <span class="mdi mdi-eye me-4"></span>
+                        <span class="mdi mdi-pencil"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">#8</th>
+                    <td>Tillie Lucero</td>
+                    <td>tillie.lucero@mail.com</td>
+                    <td>Yes</td>
+                    <td>
+                        <span class="mdi mdi-eye me-4"></span>
+                        <span class="mdi mdi-pencil"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">#9</th>
+                    <td>Sabrina Stephenson</td>
+                    <td>sabrina.stephenson@mail.com</td>
+                    <td>Yes</td>
+                    <td>
+                        <span class="mdi mdi-eye me-4"></span>
+                        <span class="mdi mdi-pencil"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">#10</th>
+                    <td>Annie Smith</td>
+                    <td>annie.smith@mail.com</td>
+                    <td>Yes</td>
+                    <td>
+                        <span class="mdi mdi-eye me-4"></span>
+                        <span class="mdi mdi-pencil"></span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-end">
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                        <span class="mdi mdi-chevron-left"></span>
+                    </a>
+                </li>
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                        <span class="mdi mdi-chevron-right"></span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    
+    
+    <!-- Modal -->
+    <div class="modal fade" id="userInfoCard" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body d-flex justify-content-between">
+                    
+                    <div class="infos d-flex justify-content-start align-items-center">
+                        <img class="me-4" src="../assets/images/emir.jpeg" alt="user_photo">
+                        <div class="detail">
+                            <p class="item-no fs-6 mb-2">#1</p>
+                            <p class="title mb-0">Admin</p>
+                            <p class="name fs-4 fw-bold mb-2">Emir Wicks</p>
+                            <p class="email mb-3">emir.wicks@mail.com</p>
+                            <p class="status mb-0">Verified</p> 
+                        </div>
+                    </div>
+                    <div class="buttons d-flex flex-column justify-content-between">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <span class="mdi mdi-chevron-down"  data-bs-toggle="collapse" href="#editBoard" role="button" aria-expanded="false" aria-controls="collapseExample"></span>
+                    </div>
+                    
+                </div>
+                <div class="collapse" id="editBoard">
+                    <div class="card card-body flex-row justify-content-end">
+                        <div class="btn btn-outline-danger fw-bold">Deactivate</div>
+                        <div class="btn btn-success fw-bold">Edit</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    const chevronDown = document.querySelector(".mdi-chevron-down")
+
+    chevronDown.addEventListener("click", () => {
+        console.log('click')
+        chevronDown.classList.toggle('active')
+    })
+
+</script>

@@ -1,0 +1,152 @@
+.admin {
+    margin-left: 296px;
+    max-width: calc(100% - 296px);
+    position: relative;
+
+    span {
+        font-size: 1.5rem;
+        line-height: 24px;
+        display: inline-block;
+        vertical-align: bottom;
+        cursor: pointer;
+    }
+
+    .hearder {
+        padding: 32px;
+
+        .left .button {
+            transition: .3s;
+            cursor: pointer;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+
+            span {
+                color: $success;
+            }
+        }
+
+        .right span:hover {
+            color: $success;
+        }
+    }
+
+    .body {
+        min-height: calc(100vh - 93px);
+        padding-bottom: 32px;
+        position: relative;
+
+        table {
+            margin-bottom: 63px;
+
+            thead tr th {
+                font-weight: 700;
+                border-color: $primary;
+
+                span {
+                    font-size: 12px;
+                    color: $success;
+                    margin-left: 4px;
+                    vertical-align: middle;
+                }
+            }
+
+            tbody tr {
+
+                th,
+                td {
+                    padding: 19px 8px 17px;
+
+                    span:hover {
+                        color: $success;
+                    }
+                }
+            }
+        }
+
+        nav {
+            position: absolute;
+            right: 24px;
+            bottom: 32px;
+
+            .page-item {
+                .page-link {
+                    border-radius: 0;
+                    border-color: $success;
+                }
+            }
+
+            .page-item:last-of-type .page-link,
+            .page-item:first-of-type .page-link {
+                padding-left: 4px;
+                padding-right: 4px;
+                color: $success;
+            }
+        }
+
+    }
+
+    .modal .modal-content {
+        width: 480px;
+
+        .modal-body {
+            padding: 32px;
+
+            img {
+                @include square(141px);
+                object-fit: cover;
+            }
+
+            .infos {
+
+                .item-no,
+                .title {
+                    line-height: 19px;
+                }
+
+                .name {
+                    line-height: 29px;
+                }
+
+                .email {
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: $gray-600;
+                }
+
+                .status {
+                    font-size: 14px;
+                    line-height: 17px;
+                    padding: 4px 8px;
+                }
+            }
+
+            .buttons .mdi-chevron-down {
+                color: $success;
+
+                &.active {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+
+        .card.card-body {
+            border: none;
+            padding: 0 32px 32px;
+
+            .btn {
+                border-radius: 0;
+            }
+
+            .btn:first-of-type {
+                width: 146px;
+                margin-right: 15px;
+            }
+
+            .btn:last-of-type {
+                width: 92px;
+            }
+        }
+    }
+}
