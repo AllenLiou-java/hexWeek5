@@ -26,7 +26,7 @@
                 <a href="#">Course</a>
             </h2>
         </li>
-        <li class="itemList active mb-4">
+        <li class="itemList mb-4">
             <span class="mdi mdi-account-multiple me-3 align-text-top"></span>
             <h2>
                 <a href="admin.html">Admin</a>
@@ -48,3 +48,23 @@
         </div>
     </div>
 </div>
+
+<script>
+    const nowPage = getPageName()
+    pageListOrder = ['index', 'question', 'assignment', 'course', 'admin', 'setting']
+    const index = pageListOrder.indexOf(nowPage)
+
+    const itemLists = document.querySelectorAll(".itemList")
+    itemLists.forEach((item) => {
+        item.classList.remove("active")
+    })
+
+    itemLists[index].classList.add('active')
+
+    function getPageName() {
+        const pathname = window.location.pathname
+        const pathnameFragnebtToArray = pathname.split("/")
+        const pageName = pathnameFragnebtToArray[pathnameFragnebtToArray.length-1].split(".html")[0]
+        return pageName
+    }
+</script>

@@ -87,7 +87,7 @@
 
     }
 
-    .modal .modal-content {
+    #userInfoCard .modal-content {
         width: 480px;
 
         .modal-body {
@@ -148,5 +148,67 @@
                 width: 92px;
             }
         }
+    }
+
+    #addNewAdmin .modal-content,
+    #editAdmin .modal-content {
+
+        h5 {
+            line-height: 29px;
+        }
+
+        input[type=text],
+        input[type=email] {
+            border-radius: 2px;
+            height: 51px;
+        }
+
+        .modal-header {
+            padding: 32px;
+        }
+
+        .modal-body {
+            padding: 0 32px 32px;
+
+
+            .btn {
+                width: 100%;
+                line-height: 19px;
+                border-radius: 2px;
+            }
+
+            .access-level {
+
+                select {
+                    line-height: 19px;
+                    border-radius: 2px;
+                    cursor: pointer;
+                }
+            }
+
+            .custom-access {
+                .form-check-input {
+                    width: 20px;
+                    height: 20px;
+
+                    &:checked[type=checkbox] {
+                        border: none;
+                    }
+                }
+            }
+        }
+
+        .modal-footer {
+            padding-right: 32px;
+
+            .btn {
+                padding: 8px 32px;
+                border-radius: 2px;
+            }
+        }
+    }
+
+    .border-gray-400 {
+        border-color: $gray-400;
     }
 }
