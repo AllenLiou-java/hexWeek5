@@ -51,15 +51,22 @@
 
 <script>
     const nowPage = getPageName()
-    pageListOrder = ['index', 'question', 'assignment', 'course', 'admin', 'setting']
-    const index = pageListOrder.indexOf(nowPage)
-
     const itemLists = document.querySelectorAll(".itemList")
-    itemLists.forEach((item) => {
-        item.classList.remove("active")
-    })
+    
+    if(nowPage === '') {
+        console.log(nowPage)
+        itemLists[0].classList.add("active")
+    } else {
+        pageListOrder = ['index', 'question', 'assignment', 'course', 'admin', 'setting']
+        const index = pageListOrder.indexOf(nowPage)
 
-    itemLists[index].classList.add('active')
+        
+        itemLists.forEach((item) => {
+            item.classList.remove("active")
+        })
+
+        itemLists[index].classList.add('active')
+    }
 
     function getPageName() {
         const pathname = window.location.pathname
