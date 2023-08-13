@@ -8,8 +8,8 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.2.96/css/materialdesignicons.min.css">
-    <script type="module" crossorigin src="/hexWeek5/assets/all-ba0c1c53.js"></script>
-    <link rel="stylesheet" href="/hexWeek5/assets/all-7d95a907.css">
+    <script type="module" crossorigin src="/hexWeek5/assets/all-00520357.js"></script>
+    <link rel="stylesheet" href="/hexWeek5/assets/all-06904cdf.css">
   </head>
   <body>
     <div class="sidebar">
@@ -40,7 +40,7 @@
                 <a href="#">Course</a>
             </h2>
         </li>
-        <li class="itemList active mb-4">
+        <li class="itemList mb-4">
             <span class="mdi mdi-account-multiple me-3 align-text-top"></span>
             <h2>
                 <a href="admin.html">Admin</a>
@@ -62,7 +62,26 @@
         </div>
     </div>
 </div>
-    <div class="dashboard">
+
+<script>
+    const nowPage = getPageName()
+    pageListOrder = ['index', 'question', 'assignment', 'course', 'admin', 'setting']
+    const index = pageListOrder.indexOf(nowPage)
+
+    const itemLists = document.querySelectorAll(".itemList")
+    itemLists.forEach((item) => {
+        item.classList.remove("active")
+    })
+
+    itemLists[index].classList.add('active')
+
+    function getPageName() {
+        const pathname = window.location.pathname
+        const pathnameFragnebtToArray = pathname.split("/")
+        const pageName = pathnameFragnebtToArray[pathnameFragnebtToArray.length-1].split(".html")[0]
+        return pageName
+    }
+</script>    <div class="dashboard">
     <div class="hearder d-flex justify-content-between align-items-end">
         <div class="left d-flex align-items-end">
             <h3 class="my-0 me-5 fs-4 fw-bold">Dashboard</h3>
